@@ -1,1 +1,10 @@
-# Hack-UMass-VI
+# - Flex Core -
+
+## Our Mission:
+####
+
+## Smart Motion:
+####
+
+## How to use:
+####
