@@ -11,6 +11,7 @@
 		4EE3CB332171C15D007248D2 /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE3CB312171C15D007248D2 /* ActivitiesViewController.swift */; };
 		4EE3CB362171C21B007248D2 /* ActivitiesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE3CB342171C21B007248D2 /* ActivitiesCollectionViewCell.swift */; };
 		4EE3CB372171C21B007248D2 /* ActivitiesLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE3CB352171C21B007248D2 /* ActivitiesLayout.swift */; };
+		4EE3CB3B21723F9E007248D2 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE3CB3A21723F9E007248D2 /* StatisticsViewController.swift */; };
 		FA5AB96B1B77A30F007443C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AB96A1B77A30F007443C8 /* AppDelegate.swift */; };
 		FA5AB9701B77A30F007443C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5AB96E1B77A30F007443C8 /* Main.storyboard */; };
 		FA5AB9721B77A30F007443C8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA5AB9711B77A30F007443C8 /* Images.xcassets */; };
@@ -37,6 +38,7 @@
 		4EE3CB312171C15D007248D2 /* ActivitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
 		4EE3CB342171C21B007248D2 /* ActivitiesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesCollectionViewCell.swift; sourceTree = "<group>"; };
 		4EE3CB352171C21B007248D2 /* ActivitiesLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesLayout.swift; sourceTree = "<group>"; };
+		4EE3CB3A21723F9E007248D2 /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
 		FA5AB9651B77A30E007443C8 /* Serial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Serial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA5AB9691B77A30F007443C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA5AB96A1B77A30F007443C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				FA755D2F1B78B8FE00A902FE /* ScannerViewController.swift */,
 				4EE3CB312171C15D007248D2 /* ActivitiesViewController.swift */,
 				4EE3CB302171C15D007248D2 /* InputUserInfoViewController.swift */,
+				4EE3CB3A21723F9E007248D2 /* StatisticsViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA5AB98B1B77A398007443C8 /* BluetoothSerial.swift in Sources */,
+				4EE3CB3B21723F9E007248D2 /* StatisticsViewController.swift in Sources */,
 				FA73A0361B78FEB0005EFDB6 /* SerialViewController.swift in Sources */,
 				4EE3CB322171C15D007248D2 /* InputUserInfoViewController.swift in Sources */,
 				4EE3CB332171C15D007248D2 /* ActivitiesViewController.swift in Sources */,

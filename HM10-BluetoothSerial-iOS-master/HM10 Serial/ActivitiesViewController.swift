@@ -10,14 +10,13 @@ import UIKit
 import CoreBluetooth
 
 class ActivitiesViewController: UIViewController {
-    @IBOutlet weak var headerTextView: UITextView!
     
 
     @IBOutlet weak var activitiesCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        serial.delegate = self
+        serial = BluetoothSerial(delegate: self)
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,6 +37,11 @@ extension ActivitiesViewController : UICollectionViewDelegate, UICollectionViewD
         cell.layer.cornerRadius = 30
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "StatisticsViewController") as! StatisticsViewController
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 extension ActivitiesViewController: BluetoothSerialDelegate{
@@ -49,7 +53,4 @@ extension ActivitiesViewController: BluetoothSerialDelegate{
         
     }
     
-    func serialDidReceiveString(_ message: String) {
-        headerTextView.text = headerTextView.text + message
-    }
 }
