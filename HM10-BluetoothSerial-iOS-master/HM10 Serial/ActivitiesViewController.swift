@@ -7,13 +7,17 @@
 //
 
 import UIKit
+import CoreBluetooth
 
 class ActivitiesViewController: UIViewController {
+    @IBOutlet weak var headerTextView: UITextView!
+    
 
     @IBOutlet weak var activitiesCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        serial.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,3 +40,16 @@ extension ActivitiesViewController : UICollectionViewDelegate, UICollectionViewD
     }
 }
 
+extension ActivitiesViewController: BluetoothSerialDelegate{
+    func serialDidChangeState() {
+        
+    }
+    
+    func serialDidDisconnect(_ peripheral: CBPeripheral, error: NSError?) {
+        
+    }
+    
+    func serialDidReceiveString(_ message: String) {
+        headerTextView.text = headerTextView.text + message
+    }
+}

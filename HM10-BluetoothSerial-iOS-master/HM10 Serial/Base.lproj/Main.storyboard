@@ -170,7 +170,7 @@
         <!--Input User Info View Controller-->
         <scene sceneID="N36-Ve-PAp">
             <objects>
-                <viewController id="yDW-Hr-ago" customClass="InputUserInfoViewController" customModule="FlexCore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yDW-Hr-ago" customClass="InputUserInfoViewController" customModule="Serial" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WDU-uS-WTd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -254,7 +254,7 @@
         <!--FlexCore-->
         <scene sceneID="CAF-ik-DoL">
             <objects>
-                <viewController storyboardIdentifier="ActivitiesViewController" id="j9W-wc-k8z" customClass="ActivitiesViewController" customModule="FlexCore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ActivitiesViewController" id="j9W-wc-k8z" customClass="ActivitiesViewController" customModule="Serial" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fDS-dQ-n0D">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -262,14 +262,14 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="i0v-nL-sdI">
                                 <rect key="frame" x="0.0" y="164" width="375" height="503"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qcd-RI-BBx" customClass="ActivitiesLayout" customModule="FlexCore" customModuleProvider="target">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qcd-RI-BBx" customClass="ActivitiesLayout" customModule="Serial" customModuleProvider="target">
                                     <size key="itemSize" width="182" height="147"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ActivitiesCollectionViewCell" id="PG3-YP-KcU" customClass="ActivitiesCollectionViewCell" customModule="FlexCore" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ActivitiesCollectionViewCell" id="PG3-YP-KcU" customClass="ActivitiesCollectionViewCell" customModule="Serial" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="182" height="147"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -298,24 +298,36 @@
                                     <outlet property="delegate" destination="j9W-wc-k8z" id="4g7-bp-iiU"/>
                                 </connections>
                             </collectionView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1Lk-JA-P0k">
+                                <rect key="frame" x="5" y="69" width="365" height="90"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="i0v-nL-sdI" firstAttribute="top" secondItem="GBB-OU-u7J" secondAttribute="top" constant="100" id="9EK-bz-xYx"/>
                             <constraint firstItem="GBB-OU-u7J" firstAttribute="trailing" secondItem="i0v-nL-sdI" secondAttribute="trailing" id="Ryr-8B-m9H"/>
+                            <constraint firstItem="1Lk-JA-P0k" firstAttribute="top" secondItem="GBB-OU-u7J" secondAttribute="top" constant="5" id="bTv-Rg-jEU"/>
                             <constraint firstItem="i0v-nL-sdI" firstAttribute="leading" secondItem="GBB-OU-u7J" secondAttribute="leading" id="kjR-nl-e01"/>
                             <constraint firstItem="GBB-OU-u7J" firstAttribute="bottom" secondItem="i0v-nL-sdI" secondAttribute="bottom" id="kzP-Pw-FiN"/>
+                            <constraint firstItem="GBB-OU-u7J" firstAttribute="trailing" secondItem="1Lk-JA-P0k" secondAttribute="trailing" constant="5" id="lHC-pu-LVf"/>
+                            <constraint firstItem="i0v-nL-sdI" firstAttribute="top" secondItem="1Lk-JA-P0k" secondAttribute="bottom" constant="5" id="mTW-f8-ETK"/>
+                            <constraint firstItem="1Lk-JA-P0k" firstAttribute="leading" secondItem="GBB-OU-u7J" secondAttribute="leading" constant="5" id="ykl-Ly-fYW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GBB-OU-u7J"/>
                     </view>
                     <navigationItem key="navigationItem" title="FlexCore" id="q6N-7S-4Aj"/>
                     <connections>
                         <outlet property="activitiesCollectionView" destination="i0v-nL-sdI" id="nUD-CF-Ml5"/>
+                        <outlet property="headerTextView" destination="1Lk-JA-P0k" id="Gd5-CK-Yg9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gBD-u4-p3h" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3900" y="1119"/>
+            <point key="canvasLocation" x="3900" y="1118.5907046476761"/>
         </scene>
     </scenes>
     <resources>
