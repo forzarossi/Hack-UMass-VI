@@ -12,4 +12,5 @@
 ## How it works:
 * Download our app, and tell us about yourself, enter your height weight and age
 * Next we’ll need to track your motion, purchase an article of clothing that will have access to your area of injury
+* When the clothing arrives, click the pair button on your app to make sure we are retrieving your data
 * Finally our smart motion will push you towards the life you want to live
