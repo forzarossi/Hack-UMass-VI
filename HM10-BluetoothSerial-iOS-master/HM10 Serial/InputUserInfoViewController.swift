@@ -19,6 +19,8 @@ class InputUserInfoViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        confirmButton.layer.cornerRadius = 5
+        confirmButton.clipsToBounds = true
     }
     
 
