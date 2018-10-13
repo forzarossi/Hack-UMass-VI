@@ -9,14 +9,21 @@
 import UIKit
 
 class StatisticsViewController: UIViewController {
-
+    @IBOutlet weak var beginButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        beginButton.layer.cornerRadius = 5
+        beginButton.clipsToBounds = true
     }
     
-
+    @IBAction func begin(_ sender: Any) {
+        
+    }
+    
     /*
     // MARK: - Navigation
 
