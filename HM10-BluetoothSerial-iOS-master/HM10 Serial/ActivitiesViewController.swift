@@ -11,7 +11,7 @@ import CoreBluetooth
 
 class ActivitiesViewController: UIViewController {
     
-
+    var activities = ["benchpress","curl","eliptical","plank","rockclimb","row","run","shoulderpress","situp","yoga",]
     @IBOutlet weak var activitiesCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +35,7 @@ extension ActivitiesViewController : UICollectionViewDelegate, UICollectionViewD
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ActivitiesCollectionViewCell", for: indexPath) as! ActivitiesCollectionViewCell
         cell.layer.cornerRadius = 30
+        cell.activityImageView.image = UIImage(named: activities[indexPath.row])
         return cell
     }
     

@@ -26,6 +26,11 @@ class InputUserInfoViewController: UIViewController {
         let vc = storyboard?.instantiateViewController(withIdentifier: "BluetoothConnectNavigation")
         present(vc!, animated: true,completion: nil)
     }
+    
+    @IBAction func tapped(_ sender: Any) {
+        self.view.endEditing(true)
+        
+    }
     /*
     // MARK: - Navigation
 
